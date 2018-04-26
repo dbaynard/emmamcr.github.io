@@ -379,6 +379,251 @@
 
 }
 
+@-webkit-keyframes bump
+{
+0.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+50.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+100.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+25.0% 
+{
+  -webkit-transform : translateX(-2px);
+  -moz-transform    : translateX(-2px);
+  -ms-transform     : translateX(-2px);
+  -o-transform      : translateX(-2px);
+  transform         : translateX(-2px);
+}
+
+75.0% 
+{
+  -webkit-transform : translateX(2px);
+  -moz-transform    : translateX(2px);
+  -ms-transform     : translateX(2px);
+  -o-transform      : translateX(2px);
+  transform         : translateX(2px);
+}
+
+}
+
+@-moz-keyframes bump
+{
+0.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+50.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+100.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+25.0% 
+{
+  -webkit-transform : translateX(-2px);
+  -moz-transform    : translateX(-2px);
+  -ms-transform     : translateX(-2px);
+  -o-transform      : translateX(-2px);
+  transform         : translateX(-2px);
+}
+
+75.0% 
+{
+  -webkit-transform : translateX(2px);
+  -moz-transform    : translateX(2px);
+  -ms-transform     : translateX(2px);
+  -o-transform      : translateX(2px);
+  transform         : translateX(2px);
+}
+
+}
+
+@-ms-keyframes bump
+{
+0.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+50.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+100.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+25.0% 
+{
+  -webkit-transform : translateX(-2px);
+  -moz-transform    : translateX(-2px);
+  -ms-transform     : translateX(-2px);
+  -o-transform      : translateX(-2px);
+  transform         : translateX(-2px);
+}
+
+75.0% 
+{
+  -webkit-transform : translateX(2px);
+  -moz-transform    : translateX(2px);
+  -ms-transform     : translateX(2px);
+  -o-transform      : translateX(2px);
+  transform         : translateX(2px);
+}
+
+}
+
+@-o-keyframes bump
+{
+0.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+50.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+100.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+25.0% 
+{
+  -webkit-transform : translateX(-2px);
+  -moz-transform    : translateX(-2px);
+  -ms-transform     : translateX(-2px);
+  -o-transform      : translateX(-2px);
+  transform         : translateX(-2px);
+}
+
+75.0% 
+{
+  -webkit-transform : translateX(2px);
+  -moz-transform    : translateX(2px);
+  -ms-transform     : translateX(2px);
+  -o-transform      : translateX(2px);
+  transform         : translateX(2px);
+}
+
+}
+
+@keyframes bump
+{
+0.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+50.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+100.0% 
+{
+  -webkit-transform : translateX(0px);
+  -moz-transform    : translateX(0px);
+  -ms-transform     : translateX(0px);
+  -o-transform      : translateX(0px);
+  transform         : translateX(0px);
+}
+
+25.0% 
+{
+  -webkit-transform : translateX(-2px);
+  -moz-transform    : translateX(-2px);
+  -ms-transform     : translateX(-2px);
+  -o-transform      : translateX(-2px);
+  transform         : translateX(-2px);
+}
+
+75.0% 
+{
+  -webkit-transform : translateX(2px);
+  -moz-transform    : translateX(2px);
+  -ms-transform     : translateX(2px);
+  -o-transform      : translateX(2px);
+  transform         : translateX(2px);
+}
+
+}
+
 @-webkit-keyframes slide-in
 {
 0.0% 
@@ -470,6 +715,11 @@ article.component
   z-index            : 1;
 }
 
+article.component .margined
+{
+  margin : 1em 2em 1em 2em;
+}
+
 article.component header
 {
   position        : relative;
@@ -512,6 +762,49 @@ article.component header > h3.dinner-id::before
   content : "#";
 }
 
+article.component header section.signup
+{
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : center;
+}
+
+article.component header section.signup h1
+{
+  font-size    : 1.19999rem;
+  flex         : 3 1 25%;
+  justify-self : left;
+  text-align   : left;
+  margin       : 0 0 0 0;
+}
+
+article.component header section.signup section
+{
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : center;
+  justify-content : right;
+  flex            : 1 1 auto;
+}
+
+article.component header section.signup section p
+{
+  text-align : right;
+  margin     : 0 0 0 0;
+}
+
+article.component header section.signup section p.time
+{
+  flex : 1 1 20%;
+}
+
+article.component header section.signup section p.date
+{
+  flex : 1 1 40%;
+}
+
 article.component input,
 article.component textarea
 {
@@ -520,17 +813,28 @@ article.component textarea
   padding          : 0 0 0 0;
   text-align       : inherit;
   background-color : inherit;
-  color            : inherit;
+  font-family      : inherit;
+  color            : #228b22;
   border           : inherit;
+  opacity          : 0.8;
+}
+
+article.component input:invalid,
+article.component textarea:invalid
+{
+  color        : #ff0000;
+  border-style : solid;
+  border-width : 1px;
 }
 
 article.component input:hover,
 article.component textarea:hover
 {
-  opacity : 0.5;
+  opacity : 1;
 }
 
-article.component section.description
+
+article.component section.buttons
 {
   display         : flex;
   flex-flow       : row wrap;
@@ -539,19 +843,71 @@ article.component section.description
   justify-content : space-around;
 }
 
-article.component section.description > p
+article.component section.buttons > p
 {
   flex : 1 0 100%;
 }
 
-article.component section.description > p.contact
+article.component section.buttons > p.contact
 {
   flex : 1 0 auto;
 }
 
-article.component section.description > p.button
+article.component section.buttons > p.button
 {
   flex : 0 1 auto;
+}
+
+article.component section.tickets
+{
+  display         : flex;
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : center;
+}
+
+article.component section.tickets p
+{
+  flex : 1 1 auto;
+}
+
+article.component section.tickets input
+{
+  width      : 2em;
+  text-align : right;
+  padding    : 0 0.5em 0 0.5em;
+}
+
+article.component ul.prices
+{
+  list-style-type : none;
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : center;
+  padding-left    : 0;
+}
+
+article.component ul.prices > li
+{
+  flex            : 1 1 40%;
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : center;
+  justify-content : space-between;
+}
+
+article.component ul.prices > li > p
+{
+  flex : 0 1 auto;
+}
+
+article.component ul.prices > li > input
+{
+  flex       : 0 0 25%;
+  text-align : right;
 }
 
 html
@@ -667,6 +1023,23 @@ header.header > div > h2.login
   font-weight        : 100;
 }
 
+
+header.header > div > h2.login.button:hover
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
+}
+
 header.header > div > h2.login:active
 {
   opacity : 1;
@@ -715,6 +1088,34 @@ nav li
   padding            : 5px 5px 5px 5px;
 }
 
+
+nav li.button:hover
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
+}
+
+
+span.in-text::before
+{
+  content : " ";
+}
+
+span.in-text::after
+{
+  content : " ";
+}
+
 body
 {
   min-width        : fit-content;
@@ -757,6 +1158,23 @@ body p.button
   transition         : all 0.5s ease 0.0s;
   color              : #f0ffff;
   opacity            : 0.84999;
+}
+
+
+body p.button.button:hover
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
 }
 
 body p.button:active
@@ -805,6 +1223,25 @@ body div.refresh:hover
   color              : #f0ffff;
 }
 
+
+body p.refresh.button:hover:hover,
+body a.refresh.button:hover:hover,
+body div.refresh.button:hover:hover
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
+}
+
 body p.refresh:active,
 body a.refresh:active,
 body div.refresh:active
@@ -815,6 +1252,25 @@ body div.refresh:active
   -o-transition      : all 0.5s ease 0.0s;
   transition         : all 0.5s ease 0.0s;
   color              : #f0ffff;
+}
+
+
+body p.refresh.button:active:hover,
+body a.refresh.button:active:hover,
+body div.refresh.button:active:hover
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
 }
 
 body p.refresh:visited,
@@ -834,6 +1290,25 @@ body div.refresh:hover:visited
   -o-transition      : all 0.5s ease 0.0s;
   transition         : all 0.5s ease 0.0s;
   color              : #f0ffff;
+}
+
+
+body p.refresh.button:hover:hover:visited,
+body a.refresh.button:hover:hover:visited,
+body div.refresh.button:hover:hover:visited
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
 }
 
 body .noselect
@@ -923,6 +1398,23 @@ section.deck > article
 {
   flex      : 1 0 90%;
   max-width : 28em;
+}
+
+
+section.deck > article.card:hover
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
 }
 
 section.deck > article h2
