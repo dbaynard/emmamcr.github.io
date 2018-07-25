@@ -628,7 +628,7 @@
 {
 0.0% 
 {
-  transform : translateY(-100%);
+  transform : translateY(50%);
 }
 
 100.0% 
@@ -642,7 +642,7 @@
 {
 0.0% 
 {
-  transform : translateY(-100%);
+  transform : translateY(50%);
 }
 
 100.0% 
@@ -656,7 +656,7 @@
 {
 0.0% 
 {
-  transform : translateY(-100%);
+  transform : translateY(50%);
 }
 
 100.0% 
@@ -670,7 +670,7 @@
 {
 0.0% 
 {
-  transform : translateY(-100%);
+  transform : translateY(50%);
 }
 
 100.0% 
@@ -684,7 +684,7 @@
 {
 0.0% 
 {
-  transform : translateY(-100%);
+  transform : translateY(50%);
 }
 
 100.0% 
@@ -718,6 +718,11 @@ article.component
 article.component .margined
 {
   margin : 1em 2em 1em 2em;
+}
+
+article.component hr.cards
+{
+  margin : 0 0 0 0;
 }
 
 article.component header,
@@ -863,7 +868,7 @@ article.component section.tickets input
   padding    : 0 0.5em 0 0.5em;
 }
 
-article.component ul.prices
+article.component ul
 {
   list-style-type : none;
   display         : flex;
@@ -872,6 +877,92 @@ article.component ul.prices
   justify-content : center;
   padding-left    : 0;
 }
+
+article.component ul.diets
+{
+  display            : grid;
+  grid               : 1fr 1fr / 1fr 1fr;
+  grid-auto-flow     : row dense;
+  place-items        : stretch;
+  background-color   : #f5f5f5;
+  margin             : 0 0 0 0;
+  -webkit-box-shadow : inset 1px 1px 5px #191970;
+  -moz-box-shadow    : inset 1px 1px 5px #191970;
+  -ms-box-shadow     : inset 1px 1px 5px #191970;
+  -o-box-shadow      : inset 1px 1px 5px #191970;
+  box-shadow         : inset 1px 1px 5px #191970;
+  -webkit-animation  : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
+  -moz-animation     : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
+  -ms-animation      : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
+  -o-animation       : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
+  animation          : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
+}
+
+article.component ul li.button
+{
+  border-radius      : 0 0 0 0;
+  background-color   : #4682b4;
+  -webkit-box-shadow : 1px 1px 5px #4682b4;
+  -moz-box-shadow    : 1px 1px 5px #4682b4;
+  -ms-box-shadow     : 1px 1px 5px #4682b4;
+  -o-box-shadow      : 1px 1px 5px #4682b4;
+  box-shadow         : 1px 1px 5px #4682b4;
+  padding            : 5px 5px 5px 5px;
+  -webkit-transition : all 0.5s ease 0.0s;
+  -moz-transition    : all 0.5s ease 0.0s;
+  -ms-transition     : all 0.5s ease 0.0s;
+  -o-transition      : all 0.5s ease 0.0s;
+  transition         : all 0.5s ease 0.0s;
+  color              : #f0ffff;
+  opacity            : 0.84999;
+}
+
+
+article.component ul li.button.button:hover
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
+}
+
+article.component ul li.button:active
+{
+  opacity : 1;
+}
+
+article.component ul li.button:hover
+{
+  opacity : 1;
+}
+
+article.component ul li.button.toggled-down
+{
+  -webkit-box-shadow : inset 1px 1px 5px #191970;
+  -moz-box-shadow    : inset 1px 1px 5px #191970;
+  -ms-box-shadow     : inset 1px 1px 5px #191970;
+  -o-box-shadow      : inset 1px 1px 5px #191970;
+  box-shadow         : inset 1px 1px 5px #191970;
+}
+
+article.component ul li.button.selected
+{
+  -webkit-box-shadow : inset 1px 1px 5px #191970;
+  -moz-box-shadow    : inset 1px 1px 5px #191970;
+  -ms-box-shadow     : inset 1px 1px 5px #191970;
+  -o-box-shadow      : inset 1px 1px 5px #191970;
+  box-shadow         : inset 1px 1px 5px #191970;
+  opacity            : 1;
+}
+
 
 article.component ul.prices > li
 {
@@ -894,6 +985,7 @@ article.component ul.prices > li > input
   text-align : right;
 }
 
+
 section.component.signups
 {
   display         : flex;
@@ -903,12 +995,32 @@ section.component.signups
   flex            : 1 0 20em;
 }
 
-section.component.signups header
+section.signups.summary
+{
+  -webkit-box-shadow : 1px 1px 5px #4682b4;
+  -moz-box-shadow    : 1px 1px 5px #4682b4;
+  -ms-box-shadow     : 1px 1px 5px #4682b4;
+  -o-box-shadow      : 1px 1px 5px #4682b4;
+  box-shadow         : 1px 1px 5px #4682b4;
+  background-color   : #fffff0;
+  padding            : 0.5em 0.5em 0.5em 0.5em;
+  margin             : 0.5em 0.5em 0.5em 0.5em;
+}
+
+section.signups header
 {
   flex : 1 0 100%;
 }
 
-section.component.signups > section.booking
+section.signups > header
+{
+  display         : flex;
+  flex-flow       : column nowrap;
+  align-items     : center;
+  justify-content : space-evenly;
+}
+
+section.signups > section.booking
 {
   display            : flex;
   flex-flow          : column nowrap;
@@ -927,18 +1039,18 @@ section.component.signups > section.booking
 }
 
 
-section.component.signups > section.booking header h1
+section.signups > section.booking header h1
 {
   font-size : 1.5rem;
 }
 
 
-section.component.signups > section.booking header h2
+section.signups > section.booking header h2
 {
   font-size : 1.3rem;
 }
 
-section.component.signups > section.booking > section.signup
+section.signups > section.booking > section.signup
 {
   display         : flex;
   flex-flow       : row wrap;
@@ -946,7 +1058,7 @@ section.component.signups > section.booking > section.signup
   justify-content : center;
 }
 
-section.component.signups section.signup.ticket
+section.signups section.signup.ticket
 {
   display         : flex;
   flex-flow       : row wrap;
@@ -955,7 +1067,7 @@ section.component.signups section.signup.ticket
   color           : #ffe4e1;
 }
 
-section.component.signups section.signup.ticket p
+section.signups section.signup.ticket p
 {
   border-radius      : 0 0 0 0;
   background-color   : #4682b4;
@@ -976,7 +1088,7 @@ section.component.signups section.signup.ticket p
 }
 
 
-section.component.signups section.signup.ticket p.button:hover
+section.signups section.signup.ticket p.button:hover
 {
   -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
   -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
@@ -992,17 +1104,17 @@ section.component.signups section.signup.ticket p.button:hover
   perspective         : 1000px;
 }
 
-section.component.signups section.signup.ticket p:active
+section.signups section.signup.ticket p:active
 {
   opacity : 1;
 }
 
-section.component.signups section.signup.ticket p:hover
+section.signups section.signup.ticket p:hover
 {
   opacity : 1;
 }
 
-section.component.signups section.signup.ticket p.toggled-down
+section.signups section.signup.ticket p.toggled-down
 {
   -webkit-box-shadow : inset 1px 1px 5px #191970;
   -moz-box-shadow    : inset 1px 1px 5px #191970;
@@ -1011,7 +1123,7 @@ section.component.signups section.signup.ticket p.toggled-down
   box-shadow         : inset 1px 1px 5px #191970;
 }
 
-section.component.signups section.signup.ticket p.selected
+section.signups section.signup.ticket p.selected
 {
   -webkit-box-shadow : inset 1px 1px 5px #191970;
   -moz-box-shadow    : inset 1px 1px 5px #191970;
@@ -1021,24 +1133,73 @@ section.component.signups section.signup.ticket p.selected
   opacity            : 1;
 }
 
-section.component.signups section.signup.ticket.member
+section.signups section.signup.ticket.member
 {
   background-color : #e6e6fa;
 }
 
-section.component.signups section.signup.ticket.affiliate
+section.signups section.signup.ticket.affiliate
 {
   background-color : #d8bfd8;
 }
 
-section.component.signups section.signup.ticket.associate
+section.signups section.signup.ticket.associate
 {
   background-color : #ffebcd;
 }
 
-section.component.signups section.signup.ticket.guest
+section.signups section.signup.ticket.guest
 {
   background-color : #ffebcd;
+}
+
+table
+{
+  border-top        : solid 2px #d3d3d3;
+  border-bottom     : solid 2px #d3d3d3;
+  border-spacing    : 0;
+  border-collapse   : collapse;
+  column-span       : all;
+  counter-increment : table;
+}
+
+table th
+{
+  padding     : 0.2em 1em 0.2em 1em;
+  font-weight : inherit;
+  text-align  : inherit;
+}
+
+table td
+{
+  padding        : 0.2em 1em 0.2em 1em;
+  vertical-align : top;
+}
+
+table thead
+{
+  text-align    : left;
+  font-weight   : normal;
+  border-bottom : solid 1px #d3d3d3;
+}
+
+table tbody
+{
+  border-style : none;
+}
+
+table tbody tr:nth-child(odd)
+{
+  background-color : #f5f5f5;
+}
+
+table.diets
+{
+  -webkit-user-select : all;
+  -moz-user-select    : all;
+  -ms-user-select     : all;
+  -o-user-select      : all;
+  user-select         : all;
 }
 
 html
@@ -1597,8 +1758,7 @@ section.component footer
   justify-content : space-evenly;
 }
 
-
-section.component.punting > header
+section.component > header
 {
   display         : flex;
   flex-flow       : row wrap;
@@ -1606,30 +1766,30 @@ section.component.punting > header
   justify-content : center;
 }
 
-section.component.punting > header h1
+section.component > header h1
 {
   flex : 6 1 60%;
 }
 
-section.component.punting > header section.menu
+section.component > header section.menu
 {
   flex : 1 1 auto;
 }
 
-section.component.punting input
+section.component input
 {
   margin : 1em 0 1em 0;
 }
 
 
-section.component.punting article.mine,
-section.component.punting p.mine
+section.component article.mine,
+section.component p.mine
 {
   background-color : #dda0dd;
 }
 
-section.component.punting article.shared,
-section.component.punting p.shared
+section.component article.shared,
+section.component p.shared
 {
   background-color : #e6e6fa;
 }
@@ -1810,6 +1970,7 @@ div#authenticate
   -ms-box-shadow     : inset 1px 1px 5px #191970;
   -o-box-shadow      : inset 1px 1px 5px #191970;
   box-shadow         : inset 1px 1px 5px #191970;
+  flex               : 0 0 100%;
 }
 
 div.create
