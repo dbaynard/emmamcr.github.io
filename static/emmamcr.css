@@ -1153,6 +1153,187 @@ section.signups section.signup.ticket.guest
   background-color : #ffebcd;
 }
 
+
+section.calendar > header
+{
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : center;
+  justify-content : space-between;
+}
+
+section.calendar > header > p.button
+{
+  margin : 0 1em 0 1em;
+}
+
+section.calendar > section.days
+{
+  display               : flex;
+  flex-flow             : row nowrap;
+  overflow-x            : scroll;
+  display               : grid;
+  grid-template-columns : repeat(auto-fill, minmax(18em, 1fr));
+  grid-auto-rows        : 1fr;
+  grid-gap              : 0.2em;
+  grid-template-columns : minmax(5em, 1fr);
+}
+
+
+section.calendar > section.days div.create
+{
+  overflow            : hidden;
+  flex                : 0 0 20em;
+  position            : relative;
+  opacity             : 0.2;
+  -webkit-user-select : none;
+  -moz-user-select    : none;
+  -ms-user-select     : none;
+  -o-user-select      : none;
+  user-select         : none;
+  display             : flex;
+  flex-flow           : row wrap;
+  align-items         : baseline;
+  justify-content     : center;
+  min-height          : 15em;
+  padding             : calc(50% - 7.5em) 0;
+}
+
+section.calendar > section.days div.create > div
+{
+  margin-top  : auto;
+  margin      : auto auto auto auto;
+  font-weight : 100;
+  line-height : 0.5;
+  transform   : matrix(20,0,0,20,0,0);
+}
+
+section.calendar > section.days div.reload
+{
+  overflow            : hidden;
+  flex                : 0 0 20em;
+  position            : relative;
+  opacity             : 0.2;
+  -webkit-user-select : none;
+  -moz-user-select    : none;
+  -ms-user-select     : none;
+  -o-user-select      : none;
+  user-select         : none;
+  display             : flex;
+  flex-flow           : row wrap;
+  align-items         : baseline;
+  justify-content     : center;
+  min-height          : 15em;
+  padding             : calc(50% - 7.5em) 0;
+}
+
+section.calendar > section.days div.reload > div
+{
+  margin-top  : auto;
+  margin      : auto auto auto auto;
+  font-weight : 100;
+  line-height : 0.5;
+  transform   : matrix(11,0,0,11,0,0);
+}
+
+section.calendar > section.days > *
+{
+  margin : 5px 0.5em 5px 0.5em;
+}
+
+
+section.calendar > section.days > *:first-child:last-child
+{
+  min-height : 15em;
+}
+
+
+@media all and (max-width: 605px)
+{
+section.calendar > section.days.names
+{
+  display : none;
+}
+
+}
+@media all and (min-width: 605px)
+{
+section.calendar > section.days
+{
+  grid-template-columns : repeat(7, minmax(5em, 1fr));
+}
+
+}
+section.calendar section.day
+{
+  background-color   : #f8f8ff;
+  margin             : 0 0 0 0;
+  -webkit-box-shadow : unset;
+  -moz-box-shadow    : unset;
+  -ms-box-shadow     : unset;
+  -o-box-shadow      : unset;
+  box-shadow         : unset;
+  min-height         : 5em;
+  position           : relative;
+  display            : flex;
+  flex-flow          : column nowrap;
+  align-items        : center;
+  justify-content    : space-evenly;
+  justify-content    : start;
+}
+
+section.calendar section.day:hover
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
+}
+
+section.calendar section.day > p
+{
+  -webkit-box-shadow : 1px 1px 5px #4682b4;
+  -moz-box-shadow    : 1px 1px 5px #4682b4;
+  -ms-box-shadow     : 1px 1px 5px #4682b4;
+  -o-box-shadow      : 1px 1px 5px #4682b4;
+  box-shadow         : 1px 1px 5px #4682b4;
+  padding            : 0.2em 0.2em 0.2em 0.2em;
+}
+
+section.calendar section.day::before
+{
+  content : attr(weekday) " " attr(day) " " attr(month);
+}
+
+@media all and (min-width: 605px)
+{
+section.calendar section.day::before
+{
+  content  : attr(day);
+  position : absolute;
+  top      : 0.2em;
+  left     : 0.2em;
+}
+
+}
+@media all and (min-width: 605px)
+{
+
+section.calendar section.day:first-of-type
+{
+  grid-column-start : var(--weekday-no);
+}
+
+}
 table
 {
   border-top        : solid 2px #d3d3d3;
@@ -1745,6 +1926,41 @@ body .hidden
 }
 
 
+section.pblock
+{
+  text-align            : left;
+  -webkit-box-shadow    : 1px 1px 5px #4682b4;
+  -moz-box-shadow       : 1px 1px 5px #4682b4;
+  -ms-box-shadow        : 1px 1px 5px #4682b4;
+  -o-box-shadow         : 1px 1px 5px #4682b4;
+  box-shadow            : 1px 1px 5px #4682b4;
+  padding               : 1em 1em 1em 1em;
+  margin                : 1em 1em 1em 1em;
+  display               : grid;
+  grid-auto-rows        : auto;
+  grid-gap              : 1em;
+  grid-template-columns : repeat(auto-fill, minmax(40ch, 1fr));
+}
+
+section.pblock > header
+{
+  grid-column : 1 / -1;
+}
+
+section.pblock p
+{
+  max-width : 60ch;
+  margin    : 0 0 0 0;
+}
+
+@media all and (max-width: 424px)
+{
+section.pblock
+{
+  grid-template-columns : none;
+}
+
+}
 section.component
 {
   max-width : 100vw;
@@ -1782,16 +1998,23 @@ section.component input
 }
 
 
-section.component article.mine,
-section.component p.mine
+section.component article.booked,
+section.component p.booked
 {
   background-color : #dda0dd;
 }
 
-section.component article.shared,
-section.component p.shared
+section.component article.interested,
+section.component p.interested
 {
   background-color : #e6e6fa;
+}
+
+
+
+section.component section header h1
+{
+  font-size : 1.6rem;
 }
 
 section.menu
@@ -1832,10 +2055,81 @@ section.key p.label
 
 section.deck
 {
-  display    : flex;
-  flex-flow  : row nowrap;
-  overflow-x : scroll;
-  max-width  : 96vw;
+  display               : flex;
+  flex-flow             : row nowrap;
+  overflow-x            : scroll;
+  display               : grid;
+  grid-template-columns : repeat(auto-fill, minmax(18em, 1fr));
+  grid-auto-rows        : 1fr;
+  max-width             : 96vw;
+}
+
+
+section.deck div.create
+{
+  overflow            : hidden;
+  flex                : 0 0 20em;
+  position            : relative;
+  opacity             : 0.2;
+  -webkit-user-select : none;
+  -moz-user-select    : none;
+  -ms-user-select     : none;
+  -o-user-select      : none;
+  user-select         : none;
+  display             : flex;
+  flex-flow           : row wrap;
+  align-items         : baseline;
+  justify-content     : center;
+  min-height          : 15em;
+  padding             : calc(50% - 7.5em) 0;
+}
+
+section.deck div.create > div
+{
+  margin-top  : auto;
+  margin      : auto auto auto auto;
+  font-weight : 100;
+  line-height : 0.5;
+  transform   : matrix(20,0,0,20,0,0);
+}
+
+section.deck div.reload
+{
+  overflow            : hidden;
+  flex                : 0 0 20em;
+  position            : relative;
+  opacity             : 0.2;
+  -webkit-user-select : none;
+  -moz-user-select    : none;
+  -ms-user-select     : none;
+  -o-user-select      : none;
+  user-select         : none;
+  display             : flex;
+  flex-flow           : row wrap;
+  align-items         : baseline;
+  justify-content     : center;
+  min-height          : 15em;
+  padding             : calc(50% - 7.5em) 0;
+}
+
+section.deck div.reload > div
+{
+  margin-top  : auto;
+  margin      : auto auto auto auto;
+  font-weight : 100;
+  line-height : 0.5;
+  transform   : matrix(11,0,0,11,0,0);
+}
+
+section.deck > *
+{
+  margin : 5px 0.5em 5px 0.5em;
+}
+
+
+section.deck > *:first-child:last-child
+{
+  min-height : 15em;
 }
 
 section.deck > p:first-child:last-child
@@ -1848,8 +2142,15 @@ section.deck > p:first-child:last-child
 
 section.deck > article
 {
-  flex      : 1 0 90%;
-  max-width : 28em;
+  flex               : 1 0 90%;
+  max-width          : 28em;
+  background-color   : #ffe4e1;
+  -webkit-box-shadow : 1px 1px 5px #4682b4;
+  -moz-box-shadow    : 1px 1px 5px #4682b4;
+  -ms-box-shadow     : 1px 1px 5px #4682b4;
+  -o-box-shadow      : 1px 1px 5px #4682b4;
+  box-shadow         : 1px 1px 5px #4682b4;
+  border-radius      : 0 0 0 0;
 }
 
 
@@ -1883,33 +2184,6 @@ section.deck > article h2
 {
   font-size   : 2.2em;
   font-weight : 100;
-}
-
-section.deck > *
-{
-  background-color   : #ffe4e1;
-  -webkit-box-shadow : 1px 1px 5px #4682b4;
-  -moz-box-shadow    : 1px 1px 5px #4682b4;
-  -ms-box-shadow     : 1px 1px 5px #4682b4;
-  -o-box-shadow      : 1px 1px 5px #4682b4;
-  box-shadow         : 1px 1px 5px #4682b4;
-  border-radius      : 0 0 0 0;
-  margin             : 5px 0.5em 5px 0.5em;
-}
-
-section.deck > *:first-child
-{
-  margin-left : 3em;
-}
-
-section.deck > *:first-child:last-child
-{
-  height : 25em;
-}
-
-section.deck > *:last-child
-{
-  margin-right : 3em;
 }
 
 section.identifiers
@@ -1971,38 +2245,6 @@ div#authenticate
   -o-box-shadow      : inset 1px 1px 5px #191970;
   box-shadow         : inset 1px 1px 5px #191970;
   flex               : 0 0 100%;
-}
-
-div.create
-{
-  overflow            : hidden;
-  flex                : 0 0 20em;
-  position            : relative;
-  opacity             : 0.2;
-  -webkit-user-select : none;
-  -moz-user-select    : none;
-  -ms-user-select     : none;
-  -o-user-select      : none;
-  user-select         : none;
-}
-
-div.create > div
-{
-  width            : 0;
-  position         : absolute;
-  transform        : matrix(20,0,0,20,60,100);
-  transform-origin : center;
-  font-weight      : 100;
-}
-
-section.punting div.create
-{
-  flex : 0 0 5em;
-}
-
-section.punting div.create > div
-{
-  transform : matrix(4,0,0,4,18,20);
 }
 
 div.full-view
