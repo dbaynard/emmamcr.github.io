@@ -694,6 +694,987 @@
 
 }
 
+table
+{
+  border-top        : solid 2px #d3d3d3;
+  border-bottom     : solid 2px #d3d3d3;
+  border-spacing    : 0;
+  border-collapse   : collapse;
+  column-span       : all;
+  counter-increment : table;
+}
+
+table th
+{
+  padding     : 0.2em 1em 0.2em 1em;
+  font-weight : inherit;
+  text-align  : inherit;
+}
+
+table td
+{
+  padding        : 0.2em 1em 0.2em 1em;
+  vertical-align : top;
+}
+
+table thead
+{
+  text-align    : left;
+  font-weight   : normal;
+  border-bottom : solid 1px #d3d3d3;
+}
+
+table tbody
+{
+  border-style : none;
+}
+
+table tbody tr:nth-child(odd)
+{
+  background-color : #f5f5f5;
+}
+
+table.diets
+{
+  -webkit-user-select : all;
+  -moz-user-select    : all;
+  -ms-user-select     : all;
+  -o-user-select      : all;
+  user-select         : all;
+}
+
+html
+{
+  font-size   : 10pt;
+  line-height : 1.25;
+}
+
+@media all and (max-width: 1080px)
+{
+html
+{
+  font-size : calc(10pt + 0.5vmin);
+}
+
+}
+input,
+textarea
+{
+  width            : 100%;
+  font-size        : inherit;
+  padding          : 0 0 0 0;
+  text-align       : inherit;
+  background-color : inherit;
+  font-family      : inherit;
+  color            : #228b22;
+  border           : inherit;
+  opacity          : 0.8;
+}
+
+input:invalid,
+textarea:invalid
+{
+  color        : #ff0000;
+  border-style : solid;
+  border-width : 1px;
+}
+
+input:hover,
+textarea:hover
+{
+  opacity : 1;
+}
+
+
+header h1,
+footer h1
+{
+  font-weight : 100;
+  font-size   : 2.2rem;
+  margin      : 0.5em 0.5em 0.5em 0.5em;
+}
+
+header.header,
+footer.header
+{
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : center;
+}
+
+header.header > img#crest,
+footer.header > img#crest
+{
+  flex               : 0 1 100px;
+  margin             : 5px 5px 5px 5px;
+  -webkit-transition : all 0.5s ease 0.0s;
+  -moz-transition    : all 0.5s ease 0.0s;
+  -ms-transition     : all 0.5s ease 0.0s;
+  -o-transition      : all 0.5s ease 0.0s;
+  transition         : all 0.5s ease 0.0s;
+}
+
+header.header > img#crest:hover,
+footer.header > img#crest:hover
+{
+  -webkit-animation   : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
+}
+
+header.header > img#crest:active,
+footer.header > img#crest:active
+{
+  -webkit-animation   : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
+}
+
+header.header > div,
+footer.header > div
+{
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : center;
+  flex            : 1 1 auto;
+}
+
+header.header > div > h1.title,
+footer.header > div > h1.title
+{
+  flex      : 1 1 auto;
+  margin    : 10px auto 10px 5px;
+  padding   : 0 5px 0 5px;
+  font-size : 2.39999rem;
+}
+
+header.header > div > h2.login,
+footer.header > div > h2.login
+{
+  border-radius      : 0 0 0 0;
+  background-color   : #4682b4;
+  -webkit-box-shadow : 1px 1px 5px #4682b4;
+  -moz-box-shadow    : 1px 1px 5px #4682b4;
+  -ms-box-shadow     : 1px 1px 5px #4682b4;
+  -o-box-shadow      : 1px 1px 5px #4682b4;
+  box-shadow         : 1px 1px 5px #4682b4;
+  padding            : 5px 5px 5px 5px;
+  -webkit-transition : all 0.5s ease 0.0s;
+  -moz-transition    : all 0.5s ease 0.0s;
+  -ms-transition     : all 0.5s ease 0.0s;
+  -o-transition      : all 0.5s ease 0.0s;
+  transition         : all 0.5s ease 0.0s;
+  color              : #f0ffff;
+  opacity            : 0.84999;
+  margin             : 5px 5px 5px 5px;
+  flex               : 0 0 auto;
+  font-size          : 1.6rem;
+  font-weight        : 100;
+}
+
+
+header.header > div > h2.login.button:hover,
+footer.header > div > h2.login.button:hover
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
+}
+
+header.header > div > h2.login:active,
+footer.header > div > h2.login:active
+{
+  opacity : 1;
+}
+
+header.header > div > h2.login:hover,
+footer.header > div > h2.login:hover
+{
+  opacity : 1;
+}
+
+header.header > div > h2.login.toggled-down,
+footer.header > div > h2.login.toggled-down
+{
+  -webkit-box-shadow : inset 1px 1px 5px #191970;
+  -moz-box-shadow    : inset 1px 1px 5px #191970;
+  -ms-box-shadow     : inset 1px 1px 5px #191970;
+  -o-box-shadow      : inset 1px 1px 5px #191970;
+  box-shadow         : inset 1px 1px 5px #191970;
+}
+
+header.header > div > h2.login.selected,
+footer.header > div > h2.login.selected
+{
+  -webkit-box-shadow : inset 1px 1px 5px #191970;
+  -moz-box-shadow    : inset 1px 1px 5px #191970;
+  -ms-box-shadow     : inset 1px 1px 5px #191970;
+  -o-box-shadow      : inset 1px 1px 5px #191970;
+  box-shadow         : inset 1px 1px 5px #191970;
+  opacity            : 1;
+}
+
+nav
+{
+  font-size          : 1.5rem;
+  background-color   : #4682b4;
+  flex               : 1 1 100%;
+  opacity            : 0.84999;
+  -webkit-box-shadow : 1px 1px 5px #4682b4;
+  -moz-box-shadow    : 1px 1px 5px #4682b4;
+  -ms-box-shadow     : 1px 1px 5px #4682b4;
+  -o-box-shadow      : 1px 1px 5px #4682b4;
+  box-shadow         : 1px 1px 5px #4682b4;
+}
+
+nav > ul
+{
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : space-evenly;
+  align-items     : center;
+  list-style-type : none;
+  padding-left    : 0;
+  margin          : auto -2.5px auto -2.5px;
+}
+
+nav li
+{
+  flex               : 0 1 auto;
+  margin             : auto 2.5px auto 2.5px;
+  -webkit-transition : all 0.5s ease 0.0s;
+  -moz-transition    : all 0.5s ease 0.0s;
+  -ms-transition     : all 0.5s ease 0.0s;
+  -o-transition      : all 0.5s ease 0.0s;
+  transition         : all 0.5s ease 0.0s;
+  color              : #f0ffff;
+  padding            : 5px 5px 5px 5px;
+}
+
+
+nav li.button:hover
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
+}
+
+
+span.in-text::before
+{
+  content : " ";
+}
+
+span.in-text::after
+{
+  content : " ";
+}
+
+body
+{
+  min-width        : fit-content;
+  margin           : 1vh 1vw 1vh 1vw;
+  background-color : #f0ffff;
+  color            : #4682b4;
+  text-align       : center;
+  font-family      : "Helvetica Neue","Helvetica","Arial", sans-serif;
+}
+
+
+body p.message
+{
+  font-size : 32pt;
+}
+
+body p.warning
+{
+  font-size : 20pt;
+  margin    : 0 auto 0 auto;
+  padding   : 1ex 1em 1ex 1em;
+}
+
+body p.button
+{
+  font-size          : 1.69999rem;
+  font-weight        : 100;
+  border-radius      : 0 0 0 0;
+  background-color   : #4682b4;
+  -webkit-box-shadow : 1px 1px 5px #4682b4;
+  -moz-box-shadow    : 1px 1px 5px #4682b4;
+  -ms-box-shadow     : 1px 1px 5px #4682b4;
+  -o-box-shadow      : 1px 1px 5px #4682b4;
+  box-shadow         : 1px 1px 5px #4682b4;
+  padding            : 5px 5px 5px 5px;
+  -webkit-transition : all 0.5s ease 0.0s;
+  -moz-transition    : all 0.5s ease 0.0s;
+  -ms-transition     : all 0.5s ease 0.0s;
+  -o-transition      : all 0.5s ease 0.0s;
+  transition         : all 0.5s ease 0.0s;
+  color              : #f0ffff;
+  opacity            : 0.84999;
+}
+
+
+body p.button.button:hover
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
+}
+
+body p.button:active
+{
+  opacity : 1;
+}
+
+body p.button:hover
+{
+  opacity : 1;
+}
+
+body p.button.toggled-down
+{
+  -webkit-box-shadow : inset 1px 1px 5px #191970;
+  -moz-box-shadow    : inset 1px 1px 5px #191970;
+  -ms-box-shadow     : inset 1px 1px 5px #191970;
+  -o-box-shadow      : inset 1px 1px 5px #191970;
+  box-shadow         : inset 1px 1px 5px #191970;
+}
+
+body p.button.selected
+{
+  -webkit-box-shadow : inset 1px 1px 5px #191970;
+  -moz-box-shadow    : inset 1px 1px 5px #191970;
+  -ms-box-shadow     : inset 1px 1px 5px #191970;
+  -o-box-shadow      : inset 1px 1px 5px #191970;
+  box-shadow         : inset 1px 1px 5px #191970;
+  opacity            : 1;
+}
+
+body p.refresh,
+body a.refresh,
+body div.refresh
+{
+  margin             : 0 auto 0 auto;
+  cursor             : pointer;
+  font-size          : 10pt;
+  max-width          : 30vw;
+  padding            : 1ex 1em 1ex 1em;
+  text-decoration    : none;
+  -webkit-transition : all 0.5s ease 0.0s;
+  -moz-transition    : all 0.5s ease 0.0s;
+  -ms-transition     : all 0.5s ease 0.0s;
+  -o-transition      : all 0.5s ease 0.0s;
+  transition         : all 0.5s ease 0.0s;
+}
+
+body p.refresh:link,
+body a.refresh:link,
+body div.refresh:link
+{
+  color : #4682b4;
+}
+
+body p.refresh:hover,
+body a.refresh:hover,
+body div.refresh:hover
+{
+  -webkit-transition : all 0.5s ease 0.0s;
+  -moz-transition    : all 0.5s ease 0.0s;
+  -ms-transition     : all 0.5s ease 0.0s;
+  -o-transition      : all 0.5s ease 0.0s;
+  transition         : all 0.5s ease 0.0s;
+  color              : #f0ffff;
+}
+
+
+body p.refresh.button:hover:hover,
+body a.refresh.button:hover:hover,
+body div.refresh.button:hover:hover
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
+}
+
+body p.refresh:active,
+body a.refresh:active,
+body div.refresh:active
+{
+  -webkit-transition : all 0.5s ease 0.0s;
+  -moz-transition    : all 0.5s ease 0.0s;
+  -ms-transition     : all 0.5s ease 0.0s;
+  -o-transition      : all 0.5s ease 0.0s;
+  transition         : all 0.5s ease 0.0s;
+  color              : #f0ffff;
+}
+
+
+body p.refresh.button:active:hover,
+body a.refresh.button:active:hover,
+body div.refresh.button:active:hover
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
+}
+
+body p.refresh:visited,
+body a.refresh:visited,
+body div.refresh:visited
+{
+  color : #4682b4;
+}
+
+body p.refresh:hover:visited,
+body a.refresh:hover:visited,
+body div.refresh:hover:visited
+{
+  -webkit-transition : all 0.5s ease 0.0s;
+  -moz-transition    : all 0.5s ease 0.0s;
+  -ms-transition     : all 0.5s ease 0.0s;
+  -o-transition      : all 0.5s ease 0.0s;
+  transition         : all 0.5s ease 0.0s;
+  color              : #f0ffff;
+}
+
+
+body p.refresh.button:hover:hover:visited,
+body a.refresh.button:hover:hover:visited,
+body div.refresh.button:hover:hover:visited
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
+}
+
+body .noselect
+{
+  -webkit-user-select : none;
+  -moz-user-select    : none;
+  -ms-user-select     : none;
+  -o-user-select      : none;
+  user-select         : none;
+}
+
+body.punting
+{
+  display         : flex;
+  flex-flow       : column wrap;
+  align-items     : flex-start;
+  justify-content : flex-start;
+}
+
+
+body.punting > header h1
+{
+  font-size : 1.8rem;
+}
+
+body div.IO
+{
+  display         : flex;
+  justify-content : center;
+}
+
+body div.IO.hidden
+{
+  display : none;
+}
+
+body div.IOcode
+{
+  display         : flex;
+  justify-content : center;
+  flex-direction  : column;
+  margin          : 2vh 2vw 2vh 2vw;
+}
+
+body div.IOcode.hidden
+{
+  display : none;
+}
+
+body textarea.IO
+{
+  max-width : 400px;
+  height    : 50vh;
+  flex      : 1 1 auto;
+}
+
+body header#title
+{
+  display         : flex;
+  justify-content : center;
+  margin          : 0 auto 0 auto;
+  flex-direction  : row;
+  flex-wrap       : wrap;
+  align-items     : center;
+  align-content   : center;
+}
+
+body header#title > h1
+{
+  margin : 1ex 0 1ex 0;
+}
+
+body .hidden
+{
+  display : none;
+}
+
+
+section.pblock
+{
+  text-align            : left;
+  -webkit-box-shadow    : 1px 1px 5px #4682b4;
+  -moz-box-shadow       : 1px 1px 5px #4682b4;
+  -ms-box-shadow        : 1px 1px 5px #4682b4;
+  -o-box-shadow         : 1px 1px 5px #4682b4;
+  box-shadow            : 1px 1px 5px #4682b4;
+  padding               : 1em 1em 1em 1em;
+  margin                : 1em 1em 1em 1em;
+  display               : grid;
+  grid-auto-rows        : auto;
+  grid-gap              : 1em;
+  grid-template-columns : repeat(auto-fill, minmax(40ch, 1fr));
+  width                 : calc(50% + 30em);
+  max-width             : 88vw;
+}
+
+section.pblock > header
+{
+  grid-column : 1 / -1;
+}
+
+section.pblock p
+{
+  max-width : 60ch;
+  margin    : 0 0 0 0;
+}
+
+@media all and (max-width: 424px)
+{
+section.pblock
+{
+  grid-template-columns : none;
+}
+
+}
+section.component
+{
+  max-width : 100vw;
+}
+
+section.component > section[booking]
+{
+  display         : flex;
+  flex-flow       : column nowrap;
+  align-items     : center;
+  justify-content : space-evenly;
+  justify-content : center;
+}
+
+section.component footer
+{
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : space-evenly;
+}
+
+section.component > header
+{
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : center;
+}
+
+section.component > header h1
+{
+  flex : 6 1 60%;
+}
+
+section.component > header section.menu
+{
+  flex : 1 1 auto;
+}
+
+section.component input
+{
+  margin : 1em 0 1em 0;
+}
+
+
+section.component article.booked,
+section.component p.booked,
+section.component div.booked
+{
+  background-color : #98fb98;
+}
+
+section.component article.interested,
+section.component p.interested,
+section.component div.interested
+{
+  background-color : #e6e6fa;
+}
+
+
+
+section.component section header h1
+{
+  font-size : 1.6rem;
+}
+
+section.menu
+{
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : space-evenly;
+}
+
+section.menu > p
+{
+  font-size : 1.69999rem;
+}
+
+section.key
+{
+  justify-content : center;
+  align-items     : center;
+}
+
+section.key section
+{
+  flex : 1 0 0;
+}
+
+section.key p
+{
+  padding : 0.5em 0.5em 0.5em 0.5em;
+  flex    : 0 1 auto;
+  display : inline-block;
+}
+
+section.key p.label
+{
+  flex : 0 0 auto;
+}
+
+section.key p.booked.label
+{
+  -webkit-box-shadow : inset 1px 1px 5px #191970;
+  -moz-box-shadow    : inset 1px 1px 5px #191970;
+  -ms-box-shadow     : inset 1px 1px 5px #191970;
+  -o-box-shadow      : inset 1px 1px 5px #191970;
+  box-shadow         : inset 1px 1px 5px #191970;
+}
+
+section.key p.interested.label
+{
+  -webkit-box-shadow : 1px 1px 5px #4682b4;
+  -moz-box-shadow    : 1px 1px 5px #4682b4;
+  -ms-box-shadow     : 1px 1px 5px #4682b4;
+  -o-box-shadow      : 1px 1px 5px #4682b4;
+  box-shadow         : 1px 1px 5px #4682b4;
+}
+
+section.deck
+{
+  display               : flex;
+  flex-flow             : row nowrap;
+  overflow-x            : scroll;
+  display               : grid;
+  grid-template-columns : repeat(auto-fill, minmax(18em, 1fr));
+  grid-auto-rows        : 1fr;
+  max-width             : 96vw;
+}
+
+
+section.deck div.create
+{
+  overflow            : hidden;
+  flex                : 0 0 20em;
+  position            : relative;
+  opacity             : 0.2;
+  -webkit-user-select : none;
+  -moz-user-select    : none;
+  -ms-user-select     : none;
+  -o-user-select      : none;
+  user-select         : none;
+  display             : flex;
+  flex-flow           : row wrap;
+  align-items         : baseline;
+  justify-content     : center;
+  min-height          : 15em;
+  padding             : calc(50% - 7.5em) 0;
+}
+
+section.deck div.create > div
+{
+  margin-top  : auto;
+  margin      : auto auto auto auto;
+  font-weight : 100;
+  line-height : 0.5;
+  transform   : matrix(20,0,0,20,0,0);
+}
+
+section.deck div.reload
+{
+  overflow            : hidden;
+  flex                : 0 0 20em;
+  position            : relative;
+  opacity             : 0.2;
+  -webkit-user-select : none;
+  -moz-user-select    : none;
+  -ms-user-select     : none;
+  -o-user-select      : none;
+  user-select         : none;
+  display             : flex;
+  flex-flow           : row wrap;
+  align-items         : baseline;
+  justify-content     : center;
+  min-height          : 15em;
+  padding             : calc(50% - 7.5em) 0;
+}
+
+section.deck div.reload > div
+{
+  margin-top  : auto;
+  margin      : auto auto auto auto;
+  font-weight : 100;
+  line-height : 0.5;
+  transform   : matrix(11,0,0,11,0,0);
+}
+
+section.deck > *
+{
+  margin : 5px 0.5em 5px 0.5em;
+}
+
+
+section.deck > *:first-child:last-child
+{
+  min-height : 15em;
+}
+
+section.deck > p:first-child:last-child
+{
+  background-color : inherit;
+  box-shadow       : inherit;
+  height           : inherit;
+  margin           : 1em auto 1em auto;
+}
+
+section.deck > article
+{
+  flex               : 1 0 90%;
+  max-width          : 28em;
+  background-color   : #ffe4e1;
+  -webkit-box-shadow : 1px 1px 5px #4682b4;
+  -moz-box-shadow    : 1px 1px 5px #4682b4;
+  -ms-box-shadow     : 1px 1px 5px #4682b4;
+  -o-box-shadow      : 1px 1px 5px #4682b4;
+  box-shadow         : 1px 1px 5px #4682b4;
+  border-radius      : 0 0 0 0;
+}
+
+
+section.deck > article.card:hover
+{
+  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
+  -webkit-transform   : translateZ(0);
+  -moz-transform      : translateZ(0);
+  -ms-transform       : translateZ(0);
+  -o-transform        : translateZ(0);
+  transform           : translateZ(0);
+  backface-visibility : hidden;
+  perspective         : 1000px;
+}
+
+section.deck > article.punting
+{
+  flex            : 0 0 10em;
+  display         : flex;
+  flex-flow       : column nowrap;
+  align-items     : center;
+  justify-content : space-evenly;
+  font-size       : 1.5rem;
+}
+
+section.deck > article h2
+{
+  font-size   : 2.2em;
+  font-weight : 100;
+}
+
+section.identifiers
+{
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : center;
+  justify-content : space-evenly;
+  flex            : 0 1 auto;
+  font-size       : 1.8rem;
+  font-weight     : 100;
+}
+
+
+section.identifiers > header h1
+{
+  font-size : 1.39999rem;
+}
+
+section.identifiers ul
+{
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : center;
+  padding-left    : 0;
+  flex            : 0 1 auto;
+}
+
+section.identifiers ul > li
+{
+  display : block;
+  flex    : 0 1 5em;
+}
+
+
+
+div#halogen > section:first-of-type
+{
+  overflow-y : hidden;
+}
+
+div#authenticate
+{
+  display            : flex;
+  flex-flow          : row wrap;
+  align-items        : baseline;
+  justify-content    : space-evenly;
+  -webkit-animation  : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
+  -moz-animation     : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
+  -ms-animation      : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
+  -o-animation       : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
+  animation          : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
+  background-color   : #ffe4e1;
+  -webkit-box-shadow : inset 1px 1px 5px #191970;
+  -moz-box-shadow    : inset 1px 1px 5px #191970;
+  -ms-box-shadow     : inset 1px 1px 5px #191970;
+  -o-box-shadow      : inset 1px 1px 5px #191970;
+  box-shadow         : inset 1px 1px 5px #191970;
+  flex               : 0 0 100%;
+}
+
+div.full-view
+{
+  position         : fixed;
+  top              : 0;
+  z-index          : 10;
+  left             : 0;
+  width            : 100%;
+  height           : 100%;
+  background-color : rgba(0,0,0,0.5);
+  display          : flex;
+  flex-flow        : column wrap;
+  justify-content  : center;
+  align-items      : center;
+}
+
+div.full-view > input
+{
+  position    : relative;
+  width       : 80%;
+  height      : fit-content;
+  font-family : monospace;
+  font-size   : 2rem;
+}
+
 article.component
 {
   position           : fixed;
@@ -1153,8 +2134,13 @@ section.signups section.signup.ticket.guest
   background-color : #ffebcd;
 }
 
+section.calendar
+{
+  max-width : calc(50vw + 30em);
+}
 
-section.calendar > header
+section.calendar > header,
+section.calendar > footer
 {
   display         : flex;
   flex-flow       : row wrap;
@@ -1163,9 +2149,39 @@ section.calendar > header
   justify-content : space-between;
 }
 
-section.calendar > header > p.button
+section.calendar > header > h1,
+section.calendar > footer > h1
 {
-  margin : 0 1em 0 1em;
+  font-size : 1.19999rem;
+  flex      : 1 1 0;
+}
+
+section.calendar > header p.button,
+section.calendar > footer p.button
+{
+  font-size : 1.19999rem;
+  margin    : 0 0.2em 0 0.2em;
+}
+
+section.calendar > header p.button:first-child,
+section.calendar > footer p.button:first-child
+{
+  margin-left : 1em;
+}
+
+section.calendar > header p.button:last-child,
+section.calendar > footer p.button:last-child
+{
+  margin-right : 1em;
+}
+
+section.calendar > header > div,
+section.calendar > footer > div
+{
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
+  justify-content : center;
 }
 
 section.calendar > section.days
@@ -1267,7 +2283,7 @@ section.calendar > section.days
 }
 section.calendar section.day
 {
-  background-color   : #f8f8ff;
+  background-color   : #dcdcdc;
   margin             : 0 0 0 0;
   -webkit-box-shadow : unset;
   -moz-box-shadow    : unset;
@@ -1277,10 +2293,10 @@ section.calendar section.day
   min-height         : 5em;
   position           : relative;
   display            : flex;
-  flex-flow          : column nowrap;
-  align-items        : center;
+  flex-flow          : row wrap;
+  align-items        : baseline;
+  justify-content    : center;
   justify-content    : space-evenly;
-  justify-content    : start;
 }
 
 section.calendar section.day:hover
@@ -1299,34 +2315,100 @@ section.calendar section.day:hover
   perspective         : 1000px;
 }
 
-section.calendar section.day > p
+section.calendar section.day > div.booking,
+section.calendar section.day > span.booking,
+section.calendar section.day > p.booking
 {
+  font-size          : 1.19999rem;
   -webkit-box-shadow : 1px 1px 5px #4682b4;
   -moz-box-shadow    : 1px 1px 5px #4682b4;
   -ms-box-shadow     : 1px 1px 5px #4682b4;
   -o-box-shadow      : 1px 1px 5px #4682b4;
   box-shadow         : 1px 1px 5px #4682b4;
-  padding            : 0.2em 0.2em 0.2em 0.2em;
+  margin             : 0.2em 0.2em 0.2em 0.2em;
+  z-index            : 10;
+  display            : flex;
+  flex-flow          : row wrap;
+  align-items        : baseline;
+  justify-content    : center;
+  opacity            : 0.8;
 }
 
+section.calendar section.day > div.booking > p,
+section.calendar section.day > span.booking > p,
+section.calendar section.day > p.booking > p
+{
+  margin  : 0 0 0 0;
+  padding : 0.5em 1em 0.5em 1em;
+}
+
+section.calendar section.day > div.booking.booked,
+section.calendar section.day > span.booking.booked,
+section.calendar section.day > p.booking.booked
+{
+  -webkit-box-shadow : inset 1px 1px 5px #191970;
+  -moz-box-shadow    : inset 1px 1px 5px #191970;
+  -ms-box-shadow     : inset 1px 1px 5px #191970;
+  -o-box-shadow      : inset 1px 1px 5px #191970;
+  box-shadow         : inset 1px 1px 5px #191970;
+}
+
+section.calendar section.day > div.booking div.cancel,
+section.calendar section.day > div.booking span.cancel,
+section.calendar section.day > div.booking p.cancel,
+section.calendar section.day > span.booking div.cancel,
+section.calendar section.day > span.booking span.cancel,
+section.calendar section.day > span.booking p.cancel,
+section.calendar section.day > p.booking div.cancel,
+section.calendar section.day > p.booking span.cancel,
+section.calendar section.day > p.booking p.cancel
+{
+  margin : 0.2em 0.2em 0.2em 0.2em;
+  color  : #cd5c5c;
+}
+
+
+@media all and (max-width: 605px)
+{
 section.calendar section.day::before
 {
-  content : attr(weekday) " " attr(day) " " attr(month);
+  content    : attr(weekday) " " attr(day) " " attr(month);
+  margin     : 0.2em 0.2em 0.2em 0.2em;
+  padding    : 0.2em 0.5em 0.2em 0.5em;
+  flex       : 1 1 auto;
+  text-align : left;
 }
 
+}
 @media all and (min-width: 605px)
 {
 section.calendar section.day::before
 {
-  content  : attr(day);
-  position : absolute;
-  top      : 0.2em;
-  left     : 0.2em;
+  content          : attr(day);
+  position         : absolute;
+  bottom           : 0;
+  right            : 0;
+  color            : #f0ffff;
+  transform        : matrix(5,0,0,5,-5,5);
+  transform-origin : right bottom;
+  font-weight      : 900;
+}
+
+}
+@media all and (max-width: 605px)
+{
+section.calendar section.day
+{
+  justify-content : flex-end;
 }
 
 }
 @media all and (min-width: 605px)
 {
+section.calendar section.day
+{
+  padding-bottom : calc(100% - 5em);
+}
 
 section.calendar section.day:first-of-type
 {
@@ -1334,942 +2416,5 @@ section.calendar section.day:first-of-type
 }
 
 }
-table
-{
-  border-top        : solid 2px #d3d3d3;
-  border-bottom     : solid 2px #d3d3d3;
-  border-spacing    : 0;
-  border-collapse   : collapse;
-  column-span       : all;
-  counter-increment : table;
-}
-
-table th
-{
-  padding     : 0.2em 1em 0.2em 1em;
-  font-weight : inherit;
-  text-align  : inherit;
-}
-
-table td
-{
-  padding        : 0.2em 1em 0.2em 1em;
-  vertical-align : top;
-}
-
-table thead
-{
-  text-align    : left;
-  font-weight   : normal;
-  border-bottom : solid 1px #d3d3d3;
-}
-
-table tbody
-{
-  border-style : none;
-}
-
-table tbody tr:nth-child(odd)
-{
-  background-color : #f5f5f5;
-}
-
-table.diets
-{
-  -webkit-user-select : all;
-  -moz-user-select    : all;
-  -ms-user-select     : all;
-  -o-user-select      : all;
-  user-select         : all;
-}
-
-html
-{
-  font-size   : 10pt;
-  line-height : 1.25;
-}
-
-@media all and (max-width: 1080px)
-{
-html
-{
-  font-size : calc(10pt + 0.5vmin);
-}
-
-}
-input,
-textarea
-{
-  width            : 100%;
-  font-size        : inherit;
-  padding          : 0 0 0 0;
-  text-align       : inherit;
-  background-color : inherit;
-  font-family      : inherit;
-  color            : #228b22;
-  border           : inherit;
-  opacity          : 0.8;
-}
-
-input:invalid,
-textarea:invalid
-{
-  color        : #ff0000;
-  border-style : solid;
-  border-width : 1px;
-}
-
-input:hover,
-textarea:hover
-{
-  opacity : 1;
-}
-
-
-header h1
-{
-  font-weight : 100;
-  font-size   : 2.2rem;
-  margin      : 0.5em 0.5em 0.5em 0.5em;
-}
-
-header.header
-{
-  display         : flex;
-  flex-flow       : row wrap;
-  align-items     : baseline;
-  justify-content : center;
-}
-
-header.header > img#crest
-{
-  flex               : 0 1 100px;
-  margin             : 5px 5px 5px 5px;
-  -webkit-transition : all 0.5s ease 0.0s;
-  -moz-transition    : all 0.5s ease 0.0s;
-  -ms-transition     : all 0.5s ease 0.0s;
-  -o-transition      : all 0.5s ease 0.0s;
-  transition         : all 0.5s ease 0.0s;
-}
-
-header.header > img#crest:hover
-{
-  -webkit-animation   : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -moz-animation      : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -ms-animation       : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -o-animation        : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  animation           : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -webkit-transform   : translateZ(0);
-  -moz-transform      : translateZ(0);
-  -ms-transform       : translateZ(0);
-  -o-transform        : translateZ(0);
-  transform           : translateZ(0);
-  backface-visibility : hidden;
-  perspective         : 1000px;
-}
-
-header.header > img#crest:active
-{
-  -webkit-animation   : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -moz-animation      : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -ms-animation       : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -o-animation        : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  animation           : shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -webkit-transform   : translateZ(0);
-  -moz-transform      : translateZ(0);
-  -ms-transform       : translateZ(0);
-  -o-transform        : translateZ(0);
-  transform           : translateZ(0);
-  backface-visibility : hidden;
-  perspective         : 1000px;
-}
-
-header.header > div
-{
-  display         : flex;
-  flex-flow       : row wrap;
-  align-items     : baseline;
-  justify-content : center;
-  flex            : 1 1 auto;
-}
-
-header.header > div > h1.title
-{
-  flex      : 1 1 auto;
-  margin    : 10px auto 10px 5px;
-  padding   : 0 5px 0 5px;
-  font-size : 2.39999rem;
-}
-
-header.header > div > h2.login
-{
-  border-radius      : 0 0 0 0;
-  background-color   : #4682b4;
-  -webkit-box-shadow : 1px 1px 5px #4682b4;
-  -moz-box-shadow    : 1px 1px 5px #4682b4;
-  -ms-box-shadow     : 1px 1px 5px #4682b4;
-  -o-box-shadow      : 1px 1px 5px #4682b4;
-  box-shadow         : 1px 1px 5px #4682b4;
-  padding            : 5px 5px 5px 5px;
-  -webkit-transition : all 0.5s ease 0.0s;
-  -moz-transition    : all 0.5s ease 0.0s;
-  -ms-transition     : all 0.5s ease 0.0s;
-  -o-transition      : all 0.5s ease 0.0s;
-  transition         : all 0.5s ease 0.0s;
-  color              : #f0ffff;
-  opacity            : 0.84999;
-  margin             : 5px 5px 5px 5px;
-  flex               : 0 0 auto;
-  font-size          : 1.6rem;
-  font-weight        : 100;
-}
-
-
-header.header > div > h2.login.button:hover
-{
-  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -webkit-transform   : translateZ(0);
-  -moz-transform      : translateZ(0);
-  -ms-transform       : translateZ(0);
-  -o-transform        : translateZ(0);
-  transform           : translateZ(0);
-  backface-visibility : hidden;
-  perspective         : 1000px;
-}
-
-header.header > div > h2.login:active
-{
-  opacity : 1;
-}
-
-header.header > div > h2.login:hover
-{
-  opacity : 1;
-}
-
-header.header > div > h2.login.toggled-down
-{
-  -webkit-box-shadow : inset 1px 1px 5px #191970;
-  -moz-box-shadow    : inset 1px 1px 5px #191970;
-  -ms-box-shadow     : inset 1px 1px 5px #191970;
-  -o-box-shadow      : inset 1px 1px 5px #191970;
-  box-shadow         : inset 1px 1px 5px #191970;
-}
-
-header.header > div > h2.login.selected
-{
-  -webkit-box-shadow : inset 1px 1px 5px #191970;
-  -moz-box-shadow    : inset 1px 1px 5px #191970;
-  -ms-box-shadow     : inset 1px 1px 5px #191970;
-  -o-box-shadow      : inset 1px 1px 5px #191970;
-  box-shadow         : inset 1px 1px 5px #191970;
-  opacity            : 1;
-}
-
-nav
-{
-  font-size          : 1.5rem;
-  background-color   : #4682b4;
-  flex               : 1 1 100%;
-  opacity            : 0.84999;
-  -webkit-box-shadow : 1px 1px 5px #4682b4;
-  -moz-box-shadow    : 1px 1px 5px #4682b4;
-  -ms-box-shadow     : 1px 1px 5px #4682b4;
-  -o-box-shadow      : 1px 1px 5px #4682b4;
-  box-shadow         : 1px 1px 5px #4682b4;
-}
-
-nav > ul
-{
-  display         : flex;
-  flex-flow       : row wrap;
-  align-items     : baseline;
-  justify-content : space-evenly;
-  align-items     : center;
-  list-style-type : none;
-  padding-left    : 0;
-  margin          : auto -2.5px auto -2.5px;
-}
-
-nav li
-{
-  flex               : 0 1 auto;
-  margin             : auto 2.5px auto 2.5px;
-  -webkit-transition : all 0.5s ease 0.0s;
-  -moz-transition    : all 0.5s ease 0.0s;
-  -ms-transition     : all 0.5s ease 0.0s;
-  -o-transition      : all 0.5s ease 0.0s;
-  transition         : all 0.5s ease 0.0s;
-  color              : #f0ffff;
-  padding            : 5px 5px 5px 5px;
-}
-
-
-nav li.button:hover
-{
-  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -webkit-transform   : translateZ(0);
-  -moz-transform      : translateZ(0);
-  -ms-transform       : translateZ(0);
-  -o-transform        : translateZ(0);
-  transform           : translateZ(0);
-  backface-visibility : hidden;
-  perspective         : 1000px;
-}
-
-
-span.in-text::before
-{
-  content : " ";
-}
-
-span.in-text::after
-{
-  content : " ";
-}
-
-body
-{
-  min-width        : fit-content;
-  margin           : 1vh 1vw 1vh 1vw;
-  background-color : #f0ffff;
-  color            : #4682b4;
-  text-align       : center;
-  font-family      : "Helvetica Neue","Helvetica","Arial", sans-serif;
-}
-
-
-body p.message
-{
-  font-size : 32pt;
-}
-
-body p.warning
-{
-  font-size : 20pt;
-  margin    : 0 auto 0 auto;
-  padding   : 1ex 1em 1ex 1em;
-}
-
-body p.button
-{
-  font-size          : 1.69999rem;
-  font-weight        : 100;
-  border-radius      : 0 0 0 0;
-  background-color   : #4682b4;
-  -webkit-box-shadow : 1px 1px 5px #4682b4;
-  -moz-box-shadow    : 1px 1px 5px #4682b4;
-  -ms-box-shadow     : 1px 1px 5px #4682b4;
-  -o-box-shadow      : 1px 1px 5px #4682b4;
-  box-shadow         : 1px 1px 5px #4682b4;
-  padding            : 5px 5px 5px 5px;
-  -webkit-transition : all 0.5s ease 0.0s;
-  -moz-transition    : all 0.5s ease 0.0s;
-  -ms-transition     : all 0.5s ease 0.0s;
-  -o-transition      : all 0.5s ease 0.0s;
-  transition         : all 0.5s ease 0.0s;
-  color              : #f0ffff;
-  opacity            : 0.84999;
-}
-
-
-body p.button.button:hover
-{
-  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -webkit-transform   : translateZ(0);
-  -moz-transform      : translateZ(0);
-  -ms-transform       : translateZ(0);
-  -o-transform        : translateZ(0);
-  transform           : translateZ(0);
-  backface-visibility : hidden;
-  perspective         : 1000px;
-}
-
-body p.button:active
-{
-  opacity : 1;
-}
-
-body p.button:hover
-{
-  opacity : 1;
-}
-
-body p.button.toggled-down
-{
-  -webkit-box-shadow : inset 1px 1px 5px #191970;
-  -moz-box-shadow    : inset 1px 1px 5px #191970;
-  -ms-box-shadow     : inset 1px 1px 5px #191970;
-  -o-box-shadow      : inset 1px 1px 5px #191970;
-  box-shadow         : inset 1px 1px 5px #191970;
-}
-
-body p.button.selected
-{
-  -webkit-box-shadow : inset 1px 1px 5px #191970;
-  -moz-box-shadow    : inset 1px 1px 5px #191970;
-  -ms-box-shadow     : inset 1px 1px 5px #191970;
-  -o-box-shadow      : inset 1px 1px 5px #191970;
-  box-shadow         : inset 1px 1px 5px #191970;
-  opacity            : 1;
-}
-
-body p.refresh,
-body a.refresh,
-body div.refresh
-{
-  margin             : 0 auto 0 auto;
-  cursor             : pointer;
-  font-size          : 10pt;
-  max-width          : 30vw;
-  padding            : 1ex 1em 1ex 1em;
-  text-decoration    : none;
-  -webkit-transition : all 0.5s ease 0.0s;
-  -moz-transition    : all 0.5s ease 0.0s;
-  -ms-transition     : all 0.5s ease 0.0s;
-  -o-transition      : all 0.5s ease 0.0s;
-  transition         : all 0.5s ease 0.0s;
-}
-
-body p.refresh:link,
-body a.refresh:link,
-body div.refresh:link
-{
-  color : #4682b4;
-}
-
-body p.refresh:hover,
-body a.refresh:hover,
-body div.refresh:hover
-{
-  -webkit-transition : all 0.5s ease 0.0s;
-  -moz-transition    : all 0.5s ease 0.0s;
-  -ms-transition     : all 0.5s ease 0.0s;
-  -o-transition      : all 0.5s ease 0.0s;
-  transition         : all 0.5s ease 0.0s;
-  color              : #f0ffff;
-}
-
-
-body p.refresh.button:hover:hover,
-body a.refresh.button:hover:hover,
-body div.refresh.button:hover:hover
-{
-  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -webkit-transform   : translateZ(0);
-  -moz-transform      : translateZ(0);
-  -ms-transform       : translateZ(0);
-  -o-transform        : translateZ(0);
-  transform           : translateZ(0);
-  backface-visibility : hidden;
-  perspective         : 1000px;
-}
-
-body p.refresh:active,
-body a.refresh:active,
-body div.refresh:active
-{
-  -webkit-transition : all 0.5s ease 0.0s;
-  -moz-transition    : all 0.5s ease 0.0s;
-  -ms-transition     : all 0.5s ease 0.0s;
-  -o-transition      : all 0.5s ease 0.0s;
-  transition         : all 0.5s ease 0.0s;
-  color              : #f0ffff;
-}
-
-
-body p.refresh.button:active:hover,
-body a.refresh.button:active:hover,
-body div.refresh.button:active:hover
-{
-  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -webkit-transform   : translateZ(0);
-  -moz-transform      : translateZ(0);
-  -ms-transform       : translateZ(0);
-  -o-transform        : translateZ(0);
-  transform           : translateZ(0);
-  backface-visibility : hidden;
-  perspective         : 1000px;
-}
-
-body p.refresh:visited,
-body a.refresh:visited,
-body div.refresh:visited
-{
-  color : #4682b4;
-}
-
-body p.refresh:hover:visited,
-body a.refresh:hover:visited,
-body div.refresh:hover:visited
-{
-  -webkit-transition : all 0.5s ease 0.0s;
-  -moz-transition    : all 0.5s ease 0.0s;
-  -ms-transition     : all 0.5s ease 0.0s;
-  -o-transition      : all 0.5s ease 0.0s;
-  transition         : all 0.5s ease 0.0s;
-  color              : #f0ffff;
-}
-
-
-body p.refresh.button:hover:hover:visited,
-body a.refresh.button:hover:hover:visited,
-body div.refresh.button:hover:hover:visited
-{
-  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -webkit-transform   : translateZ(0);
-  -moz-transform      : translateZ(0);
-  -ms-transform       : translateZ(0);
-  -o-transform        : translateZ(0);
-  transform           : translateZ(0);
-  backface-visibility : hidden;
-  perspective         : 1000px;
-}
-
-body .noselect
-{
-  -webkit-user-select : none;
-  -moz-user-select    : none;
-  -ms-user-select     : none;
-  -o-user-select      : none;
-  user-select         : none;
-}
-
-body.punting
-{
-  display         : flex;
-  flex-flow       : column wrap;
-  align-items     : flex-start;
-  justify-content : flex-start;
-}
-
-
-body.punting > header h1
-{
-  font-size : 1.8rem;
-}
-
-body div.IO
-{
-  display         : flex;
-  justify-content : center;
-}
-
-body div.IO.hidden
-{
-  display : none;
-}
-
-body div.IOcode
-{
-  display         : flex;
-  justify-content : center;
-  flex-direction  : column;
-  margin          : 2vh 2vw 2vh 2vw;
-}
-
-body div.IOcode.hidden
-{
-  display : none;
-}
-
-body textarea.IO
-{
-  max-width : 400px;
-  height    : 50vh;
-  flex      : 1 1 auto;
-}
-
-body header#title
-{
-  display         : flex;
-  justify-content : center;
-  margin          : 0 auto 0 auto;
-  flex-direction  : row;
-  flex-wrap       : wrap;
-  align-items     : center;
-  align-content   : center;
-}
-
-body header#title > h1
-{
-  margin : 1ex 0 1ex 0;
-}
-
-body .hidden
-{
-  display : none;
-}
-
-
-section.pblock
-{
-  text-align            : left;
-  -webkit-box-shadow    : 1px 1px 5px #4682b4;
-  -moz-box-shadow       : 1px 1px 5px #4682b4;
-  -ms-box-shadow        : 1px 1px 5px #4682b4;
-  -o-box-shadow         : 1px 1px 5px #4682b4;
-  box-shadow            : 1px 1px 5px #4682b4;
-  padding               : 1em 1em 1em 1em;
-  margin                : 1em 1em 1em 1em;
-  display               : grid;
-  grid-auto-rows        : auto;
-  grid-gap              : 1em;
-  grid-template-columns : repeat(auto-fill, minmax(40ch, 1fr));
-}
-
-section.pblock > header
-{
-  grid-column : 1 / -1;
-}
-
-section.pblock p
-{
-  max-width : 60ch;
-  margin    : 0 0 0 0;
-}
-
-@media all and (max-width: 424px)
-{
-section.pblock
-{
-  grid-template-columns : none;
-}
-
-}
-section.component
-{
-  max-width : 100vw;
-}
-
-section.component footer
-{
-  display         : flex;
-  flex-flow       : row wrap;
-  align-items     : baseline;
-  justify-content : space-evenly;
-}
-
-section.component > header
-{
-  display         : flex;
-  flex-flow       : row wrap;
-  align-items     : baseline;
-  justify-content : center;
-}
-
-section.component > header h1
-{
-  flex : 6 1 60%;
-}
-
-section.component > header section.menu
-{
-  flex : 1 1 auto;
-}
-
-section.component input
-{
-  margin : 1em 0 1em 0;
-}
-
-
-section.component article.booked,
-section.component p.booked
-{
-  background-color : #dda0dd;
-}
-
-section.component article.interested,
-section.component p.interested
-{
-  background-color : #e6e6fa;
-}
-
-
-
-section.component section header h1
-{
-  font-size : 1.6rem;
-}
-
-section.menu
-{
-  display         : flex;
-  flex-flow       : row wrap;
-  align-items     : baseline;
-  justify-content : space-evenly;
-}
-
-section.menu > p
-{
-  font-size : 1.69999rem;
-}
-
-section.key
-{
-  justify-content : center;
-  align-items     : center;
-}
-
-section.key section
-{
-  flex : 1 0 0;
-}
-
-section.key p
-{
-  padding : 0.5em 0.5em 0.5em 0.5em;
-  flex    : 0 1 auto;
-  display : inline-block;
-}
-
-section.key p.label
-{
-  flex : 0 0 auto;
-}
-
-section.deck
-{
-  display               : flex;
-  flex-flow             : row nowrap;
-  overflow-x            : scroll;
-  display               : grid;
-  grid-template-columns : repeat(auto-fill, minmax(18em, 1fr));
-  grid-auto-rows        : 1fr;
-  max-width             : 96vw;
-}
-
-
-section.deck div.create
-{
-  overflow            : hidden;
-  flex                : 0 0 20em;
-  position            : relative;
-  opacity             : 0.2;
-  -webkit-user-select : none;
-  -moz-user-select    : none;
-  -ms-user-select     : none;
-  -o-user-select      : none;
-  user-select         : none;
-  display             : flex;
-  flex-flow           : row wrap;
-  align-items         : baseline;
-  justify-content     : center;
-  min-height          : 15em;
-  padding             : calc(50% - 7.5em) 0;
-}
-
-section.deck div.create > div
-{
-  margin-top  : auto;
-  margin      : auto auto auto auto;
-  font-weight : 100;
-  line-height : 0.5;
-  transform   : matrix(20,0,0,20,0,0);
-}
-
-section.deck div.reload
-{
-  overflow            : hidden;
-  flex                : 0 0 20em;
-  position            : relative;
-  opacity             : 0.2;
-  -webkit-user-select : none;
-  -moz-user-select    : none;
-  -ms-user-select     : none;
-  -o-user-select      : none;
-  user-select         : none;
-  display             : flex;
-  flex-flow           : row wrap;
-  align-items         : baseline;
-  justify-content     : center;
-  min-height          : 15em;
-  padding             : calc(50% - 7.5em) 0;
-}
-
-section.deck div.reload > div
-{
-  margin-top  : auto;
-  margin      : auto auto auto auto;
-  font-weight : 100;
-  line-height : 0.5;
-  transform   : matrix(11,0,0,11,0,0);
-}
-
-section.deck > *
-{
-  margin : 5px 0.5em 5px 0.5em;
-}
-
-
-section.deck > *:first-child:last-child
-{
-  min-height : 15em;
-}
-
-section.deck > p:first-child:last-child
-{
-  background-color : inherit;
-  box-shadow       : inherit;
-  height           : inherit;
-  margin           : 1em auto 1em auto;
-}
-
-section.deck > article
-{
-  flex               : 1 0 90%;
-  max-width          : 28em;
-  background-color   : #ffe4e1;
-  -webkit-box-shadow : 1px 1px 5px #4682b4;
-  -moz-box-shadow    : 1px 1px 5px #4682b4;
-  -ms-box-shadow     : 1px 1px 5px #4682b4;
-  -o-box-shadow      : 1px 1px 5px #4682b4;
-  box-shadow         : 1px 1px 5px #4682b4;
-  border-radius      : 0 0 0 0;
-}
-
-
-section.deck > article.card:hover
-{
-  -webkit-animation   : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -moz-animation      : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -ms-animation       : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -o-animation        : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  animation           : bump 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.0s 1 normal both;
-  -webkit-transform   : translateZ(0);
-  -moz-transform      : translateZ(0);
-  -ms-transform       : translateZ(0);
-  -o-transform        : translateZ(0);
-  transform           : translateZ(0);
-  backface-visibility : hidden;
-  perspective         : 1000px;
-}
-
-section.deck > article.punting
-{
-  flex            : 0 0 10em;
-  display         : flex;
-  flex-flow       : column nowrap;
-  align-items     : center;
-  justify-content : space-evenly;
-  font-size       : 1.5rem;
-}
-
-section.deck > article h2
-{
-  font-size   : 2.2em;
-  font-weight : 100;
-}
-
-section.identifiers
-{
-  display         : flex;
-  flex-flow       : row wrap;
-  align-items     : baseline;
-  justify-content : center;
-  justify-content : space-evenly;
-  flex            : 0 1 auto;
-  font-size       : 1.8rem;
-  font-weight     : 100;
-}
-
-
-section.identifiers > header h1
-{
-  font-size : 1.39999rem;
-}
-
-section.identifiers ul
-{
-  display         : flex;
-  flex-flow       : row wrap;
-  align-items     : baseline;
-  justify-content : center;
-  padding-left    : 0;
-  flex            : 0 1 auto;
-}
-
-section.identifiers ul > li
-{
-  display : block;
-  flex    : 0 1 5em;
-}
-
-
-
-div#halogen > section:first-of-type
-{
-  overflow-y : hidden;
-}
-
-div#authenticate
-{
-  display            : flex;
-  flex-flow          : row wrap;
-  align-items        : baseline;
-  justify-content    : space-evenly;
-  -webkit-animation  : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
-  -moz-animation     : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
-  -ms-animation      : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
-  -o-animation       : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
-  animation          : slide-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.0s 1 normal both;
-  background-color   : #ffe4e1;
-  -webkit-box-shadow : inset 1px 1px 5px #191970;
-  -moz-box-shadow    : inset 1px 1px 5px #191970;
-  -ms-box-shadow     : inset 1px 1px 5px #191970;
-  -o-box-shadow      : inset 1px 1px 5px #191970;
-  box-shadow         : inset 1px 1px 5px #191970;
-  flex               : 0 0 100%;
-}
-
-div.full-view
-{
-  position         : fixed;
-  top              : 0;
-  z-index          : 10;
-  left             : 0;
-  width            : 100%;
-  height           : 100%;
-  background-color : rgba(0,0,0,0.5);
-  display          : flex;
-  flex-flow        : column wrap;
-  justify-content  : center;
-  align-items      : center;
-}
-
-div.full-view > input
-{
-  position    : relative;
-  width       : 80%;
-  height      : fit-content;
-  font-family : monospace;
-  font-size   : 2rem;
-}
-
 
 /* Generated with Clay, http://fvisser.nl/clay */
