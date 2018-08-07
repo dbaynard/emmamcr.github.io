@@ -1099,6 +1099,12 @@ body p.button.selected
   opacity            : 1;
 }
 
+body p.button > a
+{
+  text-decoration : none;
+  color           : inherit;
+}
+
 body p.refresh,
 body a.refresh,
 body div.refresh
@@ -1405,6 +1411,7 @@ section.component p.booked,
 section.component div.booked
 {
   background-color : #98fb98;
+  margin           : 0 0 0 0;
 }
 
 section.component article.interested,
@@ -1412,6 +1419,7 @@ section.component p.interested,
 section.component div.interested
 {
   background-color : #e6e6fa;
+  margin           : 0 0 0 0;
 }
 
 
@@ -1436,13 +1444,16 @@ section.menu > p
 
 section.key
 {
+  display         : flex;
+  flex-flow       : row wrap;
+  align-items     : baseline;
   justify-content : center;
-  align-items     : center;
 }
 
 section.key section
 {
-  flex : 1 0 0;
+  flex   : 1 1 auto;
+  margin : 0 1em 0 1em;
 }
 
 section.key p
@@ -2367,7 +2378,7 @@ section.calendar section.day > div.booking > p,
 section.calendar section.day > span.booking > p,
 section.calendar section.day > p.booking > p
 {
-  margin : 0.5em 1em 0.5em 1em;
+  margin : 0.4em 0.4em 0.4em 0.4em;
 }
 
 section.calendar section.day > div.booking.booked,
